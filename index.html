@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <span class="form-head">One Account.
+      <br> Everything Intuit.
+    </span>
+    <div class="form-head-text">
+      <span>Create an account for all of Intuit's products</span>
+      <br>
+      <span>including Mint</span>.
+      <a id="learn-more" href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account" target="_blank">Learn more</a>
+    </div>
+
+    <form>
+      <fieldset class="account-info">
+        <label>
+          Email Address
+          <input type="email" name="email-address">
+        </label>
+
+        <label>
+          Phone(recomended)
+          <input type="tel" name="phone-number">
+          <span id="small-text">Standard call, messaging or data rates may apply.</span>
+        </label>
+
+        <label>
+          Password
+          <input type="password" name="password">
+        </label>
+      </fieldset>
+      <fieldset class="account-action">
+        <input class="btn" type="submit" name="submit" value="Create Account">
+      </fieldset>
+    </form>
+    <div class="terms">
+      <span>By clicking Create Account, you agree to our
+    <br>
+      <a id="link-terms-of-use" href="https://www.mint.com/terms" target="_blank">License Agreement</a>
+      <span id="consent">and have read and acknowledge<br>our</span>
+      <a id="statement-link" href="https://security.intuit.com/privacy" target="_blank">Privacy Statement</a>
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>
