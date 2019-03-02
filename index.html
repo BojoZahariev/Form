@@ -7,11 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
   <script src="script.js"></script>
 </head>
 
 <body>
+
+  <div class="navigation">
+    <button id="sign-in-button" class="ius-btn ius-btn-submit">
+      <i class="fas fa-lock"></i> Sign In
+    </button>
+
+    <span class="navigation-column" id="already">Already have an Intuit account?</span>
+    <br>
+    <a class="navigation-column" id="recovery-link" href="#">I forgot my User ID or Password</a>
+  </div>
+  <div class="logo">
+    <img id="intuit-logo" src="https://i.ibb.co/g9KCb9D/Capture.png" border="0">
+
+  </div>
+
   <div class="container">
     <span class="form-head">One Account.
       <br> Everything Intuit.
@@ -36,11 +52,13 @@
           <span id="small-text">Standard call, messaging or data rates may apply.</span>
         </label>
 
-        <label>
+        <label id="password">
           Password
           <input type="password" name="password">
+          <i class="fas fa-lock-open"></i>
         </label>
       </fieldset>
+
       <fieldset class="account-action">
         <input class="btn" type="submit" name="submit" value="Create Account">
       </fieldset>
@@ -53,7 +71,28 @@
       <a id="statement-link" href="https://security.intuit.com/privacy" target="_blank">Privacy Statement</a>
       </span>
     </div>
+
+    <div class="form-footer">
+      <div class="captcha">
+        <span>Invisible reCAPTCHA by Google</span>
+        <a id="privacy-policy" href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy</a>
+        <span>and</span>
+        <a id="captcha-terms" href="https://www.google.com/intl/en/policies/terms/" target="_blank">Terms of Use</a>
+      </div>
+    </div>
   </div>
+
+  <footer class="footer">
+    <ul>
+      <li><a href="http://about.intuit.com/legal/" target="_blank">Legal</a></li>
+      <li><a href="https://security.intuit.com/privacy/" target="_blank">Privacy</a></li>
+      <li><a href="http://security.intuit.com/" target="_blank">Security</a></li>
+    </ul>
+    
+    <span class = "copyright">© 2019 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</span>
+    <br>
+    <span class = "copyright">Terms and conditions, features, support, pricing, and service options subject to change without notice.</span>
+  </footer>
 </body>
 
 </html>
