@@ -21,6 +21,7 @@ html {
 
 #already {
   font-size: 14px;
+  color: #757575;
 }
 
 #recovery-link {
@@ -43,7 +44,14 @@ html {
 
 #intuit-logo {
   display: block;
+  width: 118px;
   margin: 40px auto 18px;
+  padding-top: 20px;
+}
+
+.logos-under {
+  text-align: center;
+  margin: 15px auto;
 }
 
 .container {
@@ -143,9 +151,15 @@ input {
   /* For IE8 and earlier */
 }
 
-.account-action .btn {
+.account-action {
+  position: relative;
   width: 320px;
   height: 40px;
+}
+
+.account-action .btn {
+  width: 320px;
+  height: 45px;
   display: block;
   margin: 10px auto;
   background: #0077C5;
@@ -155,6 +169,13 @@ input {
   cursor: pointer;
   font-size: 15.75px;
   padding: 6px 12px;
+}
+
+.fa-lock {
+  position: absolute;
+  top: 25px;
+  left: 85px;
+  color: white;
 }
 
 .terms {
@@ -169,9 +190,10 @@ input {
 }
 
 #link-terms-of-use,
-#statement-link {
+#statement-link,
+#learn-more {
   text-decoration: none;
-  color: #0077C5
+  color: #0077C5;
 }
 
 .form-footer {
@@ -179,7 +201,7 @@ input {
   background-color: #ECEEF1;
   text-align: center;
   font-size: 10px;
-  margin-top: 58px;
+  margin-top: 40px;
 }
 
 .captcha {
@@ -195,25 +217,20 @@ input {
 
 footer {
   text-align: center;
+  margin-top: 25px;
 }
 
-ul {
-  list-style-type: none;
-  overflow: hidden;
+
+.lps {
   text-align: center;
   margin-bottom: 2px;
 }
 
-li {
-  padding: 5px;
-  display: inline-block;
-}
-
-li a {
-  display: block;
+.lps a {
   text-decoration: none;
   color: #505050;
   font-size: 14px;
+  padding: 5px;
 }
 
 .copyright {
